@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-path-showcase-cross-compoent-communication-ed'`, () => {
+  it(`should have as title 'angular-path-showcase-cross-component-communication-ed'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-path-showcase-cross-compoent-communication-ed');
+    expect(app.title).toEqual('angular-path-showcase-cross-component-communication-ed');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-path-showcase-cross-compoent-communication-ed app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-path-showcase-cross-component-communication-ed app is running!');
   });
 });

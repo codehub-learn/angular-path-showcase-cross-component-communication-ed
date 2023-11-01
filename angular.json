@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-path-showcase-cross-compoent-communication-ed": {
+    "angular-path-showcase-cross-component-communication-ed": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-path-showcase-cross-compoent-communication-ed",
+            "outputPath": "dist/angular-path-showcase-cross-component-communication-ed",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-path-showcase-cross-compoent-communication-ed:build:production"
+              "browserTarget": "angular-path-showcase-cross-component-communication-ed:build:production"
             },
             "development": {
-              "browserTarget": "angular-path-showcase-cross-compoent-communication-ed:build:development"
+              "browserTarget": "angular-path-showcase-cross-component-communication-ed:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-path-showcase-cross-compoent-communication-ed:build"
+            "browserTarget": "angular-path-showcase-cross-component-communication-ed:build"
           }
         },
         "test": {
