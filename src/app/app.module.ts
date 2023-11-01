@@ -7,6 +7,7 @@ import { PublisherComponent } from './components/publisher/publisher.component';
 import { SubscriberComponent } from './components/subscriber/subscriber.component';
 import { PageOneComponent } from './components/page-one/page-one.component';
 import { PageTwoComponent } from './components/page-two/page-two.component';
+import { CountriesComponent } from './components/countries/countries.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageTwoComponent } from './components/page-two/page-two.component';
     PublisherComponent,
     SubscriberComponent,
     PageOneComponent,
-    PageTwoComponent
+    PageTwoComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
