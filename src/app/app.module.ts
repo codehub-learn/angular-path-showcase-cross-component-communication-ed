@@ -8,6 +8,9 @@ import { SubscriberComponent } from './components/subscriber/subscriber.componen
 import { PageOneComponent } from './components/page-one/page-one.component';
 import { PageTwoComponent } from './components/page-two/page-two.component';
 import { CountriesComponent } from './components/countries/countries.component';
+import {HttpClientModule} from "@angular/common/http";
+import { CountryListComponent } from './components/countries/country-list/country-list.component';
+import { CountryShowcaseComponent } from './components/countries/country-showcase/country-showcase.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { CountriesComponent } from './components/countries/countries.component';
     SubscriberComponent,
     PageOneComponent,
     PageTwoComponent,
-    CountriesComponent
+    CountriesComponent,
+    CountryListComponent,
+    CountryShowcaseComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,3 @@
+<ul *ngFor="let country of countries; let i=index">
+  <li (click)="publishCountry(i)">{{country.name.common}}</li>
+</ul>
