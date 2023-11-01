@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import {Subject} from "rxjs";
+import {BehaviorSubject, ReplaySubject, Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataPublisherService {
-  dataSubject = new Subject();
+  dataSubject = new ReplaySubject(5);
+
   constructor() { }
 
   publishData(data: any){
